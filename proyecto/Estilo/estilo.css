@@ -1,0 +1,183 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(to right, #642B73, #C6426E);
+
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif, helvetica;
+}
+
+.wrap 
+{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+form
+{
+    width: 120%;
+    /*Margen arriba y abajo de 20px*/
+    margin: 20px 0;
+    /*Margen interno de 20px */
+    padding: 20px;
+    /*Fondo blanco */
+    background: #fff;
+    /*Nos sirve para el botón submit*/
+    overflow: hidden;
+    /*Una sombra de 3px de color gris */
+    box-shadow: 0 0 3px rgb(187, 0, 255);
+    /* borde de  arriba de 4 pixeles */
+    border-top:4px solid #536DFE
+}
+
+form input[type="text"],
+form textarea
+{
+    /*Se le agrega un borde*/
+    border: 1px solid #536DFE;
+    /*Se le agrega un borde radius para redondear*/
+    border-radius: 2px;
+    padding: 16px;
+    /*Ancho 100% para que los input abarquen todo el ancho disponible */
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:#141938;
+}
+
+form input[type="text"]:focus,
+form textarea
+{
+    /*Border sólido de 2 pixeles y reducimos el padding a 15 px*/
+    border: 2px solid #3F5185;
+    padding: 15px;
+}
+
+form input[type="submit"]:hover{
+    background: #E64A19;
+}
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"]
+{
+    display:none;
+}
+
+.formulario .radio label,
+.formulario .checkbox label
+{
+    color:#22a4dc;
+    padding: 5px 15px 5px 51px;
+    display:inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.formulario .radio label:hover,
+.formulario .checkbox label:hover
+{
+    background: rgba(0,116,217,0.1);
+}
+
+.formulario .radio label:before,
+.formulario .checkbox label:before
+{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #0074D9;
+    border-radius: 50%;
+    position: absolute;
+    left:17px;
+    top: 4px;
+}
+
+
+.formulario .checkbox label:before
+{
+    border-radius: 3px;
+}
+
+.formulario input[type="radio"]:checked + label,
+.formulario input[type="checkbox"]:checked + label
+{
+    padding: 5px 15px;
+    background: #0774D9;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.formulario input[type="radio"]:checked + label:before,
+.formulario input[type="checkbox"]:checked + label:before
+{
+    display: none;
+}
+
+.btn,
+form input[type="submit"]
+{
+    padding: 15px;
+    background: #ED572A;
+    color:#E1E9FA;
+    font-size: 1em;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    border:none;
+    float: right;
+    cursor: pointer;
+    
+}
+
+select {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px #ddd;
+  background-color: #f8f8f8;
+  color: #444;
+}
+
+select:hover, select:focus {
+  outline: none;
+  border-color: #aaa;
+  box-shadow: inset 0 1px 3px #ddd, 0 0 0 1px #aaa;
+}
+
+.datetime input[type=datetime-local] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #555;
+  font-size: 14px;
+  padding: 8px;
+  width: 42%;
+  margin-top: 5px;
+}
+
+.datetime input[type=datetime-local]:focus {
+  border: 1px solid #00BFFF;
+  box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+  outline: none;
+}
+
